@@ -59,4 +59,3 @@ function addYear(){
         yearElement.innerHTML = currentYear + " " + existingText;
     }
 }
-addYear();
