@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="author" content="Emmy Sumpter">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+</head>
+<body>
+    <header>
+        <div class = "container">
+            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+            <h1>MonoMuse</h1>
+        </div>
+
+        <div>
+            <nav>
+                <a href="../index.html">Home</a> 
+                <a href="explore.html">Explore</a>
+                <a href="exhibitions.html">Exhibitions</a>
+                <a href="tickets.html">Tickets</a>
+                <a id="navselected" href="checkout.html">Checkout</a>
+            </nav>
+        </div>
+        <h1>Checkout</h1>
+        <div class="main">
+            <form>
+                <label for="name">Name: (required)</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email: (required)</label><br>
+                <input type="text" id="email" name="email"><br><br>
+                <label for="tquant">Ticket Quantity: (required)</label><br>
+                <input type="text" id="tquant" name="tquant"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <div>
+                <footer>
+                    <p id="copyYear">MonoMuse. All Rights Reserved.</p>
+                </footer>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
