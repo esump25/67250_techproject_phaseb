@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://code.jquery.com/jquery-4.0.0-beta.min.js"></script>
+    <script src="../static/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emmy Sumpter">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+</head>
+<body onload="addYear()">
+    <div class = "container">
+        <header class="header">
+            <div class="header-content">
+                <div class="header-brand">
+                    <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+                    <h1>MonoMuse</h1>
+                </div>
+                <a class="cta" href="buytickets.html">Buy Tickets!</a>
+            </div>
+        </header>
+
+        <nav class = "nav_bar navBox">
+            <button id="hamburger">☰</button>
+            <a href="../index.html">Home</a> 
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="buytickets.html">Tickets</a>
+        </nav>
+
+        <main class="main">
+            <h1>Exhibitions</h1>
+            <div class = "container2">
+                <div class = "slideshow" id = "slideshow1">
+                    <button class="slide-btn prev">←</button>
+                    <img class = "slide-img" src="../static/exhibit1.png" alt="Neon Pulse Exhibition Image" width = "500">
+                    <img class = "slide-img" src="../static/exhibit1a.png" alt="Neon Pulse Exhibition Upclose" width = "500" style="display:none">
+                    <img class = "slide-img" src="../static/exhibit1b.png" alt="Neon Pulse Exhibition Materials" width = "500" style="display:none">
+                    <button class="slide-btn next">→</button>
+                </div>
+                <div class = "content-box">
+                    <h3>Exhibition 1: Neon Pulse</h3>
+                    <p>A deep dive into the evolution of light art, featuring large-scale installations that use gas-discharge lamps and fiber optics. This collection tracks how artists have used electricity to redefine physical space, turning cold glass and wire into vibrant, glowing landscapes that react to the presence of the viewer.</p>
+                </div>
+            </div>
+
+            <div class="container2">
+                <div class="slideshow" id="slideshow2">
+                    <button class="slide-btn prev">←</button>
+                    <img class="slide-img" src="../static/exhibit2.png" alt="The Living Studio Image" width="500">
+                    <img class="slide-img" src="../static/exhibit2a.png" alt="The Living Studio Materials" width="500" style="display:none">
+                    <img class="slide-img" src="../static/exhibit2b.png" alt="The Living Studio Upclose" width="500" style="display:none">
+                    <button class="slide-btn next">→</button>
+                </div>
+                <div class = "content-box">
+                    <h3>Exhibition 2: The Living Studio</h3>
+                    <p>An open-concept gallery that functions as a workspace for resident artists. Visitors can watch the raw process of creation unfold in real-time, from the first sketch to the finished piece. It’s an unpolished, behind-the-scenes look at the trial and error involved in modern craftsmanship, featuring rotating workshops and live demonstrations.</p>
+                </div>
+            </div>
+        </main>
+        <footer class = "footer">
+            <p id="copyYear">MonoMuse. All Rights Reserved.</p>
+        </footer>
+    </div>      
+</body>
+</html>
