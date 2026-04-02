@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+    <!-- all images are made with gemini-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/style.css">
+    <script src="https://code.jquery.com/jquery-4.0.0-beta.min.js"></script>
+    <script src="./static/script.js" defer></script>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emmy Sumpter">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+</head>
+<body onload="addYear()">
+    <div class = "container">
+        <header class="header">
+            <div class="header-content">
+                <div class="header-brand">
+                    <img id="logo" src="./static/monomuselogo.png" alt="MonoMuse Museum Logo">
+                    <h1>MonoMuse</h1>
+                </div>
+                <a class="cta" href="views/buytickets.html">Buy Tickets!</a>
+            </div>
+        </header>
+
+        <nav class = "nav_bar navBox">
+            <button id="hamburger">☰</button>
+            <a href="index.html">Home</a>
+            <a href="views/explore.html">Explore</a>
+            <a href="views/exhibitions.html">Exhibitions</a>
+            <a href="views/buytickets.html">Tickets</a>
+        </nav>
+
+        
+        <main class="main">
+            <h1 id = "greeting" >Welcome to Monomuse</h1>
+            <div>
+            <p id ="shortIntro">Take a trip to MonoMuse, a gallery of unique art, statutes, and exhibitions. Within our galleries, we curate an incredible collection of mechanical wonders and immersive spectacles, each designed to illuminate not only the meaning of the work itself but also the impact on you, the audience. We cordially invite you to wander through our rotating exhibitions and tactile displays. You will find a sanctuary of discovery intended to provoke intellect, stir imagination, and celebrate the magnificent ingenuity of our flourishing world.</p>
+            <p id ="longIntro">Beyond the galleries, we pride ourselves on being a cornerstone of our community’s cultural heritage, blending traditional Southern hospitality with a forward-thinking passion for the arts. Whether you’re finding shade in our quiet sculpture garden or engaging with a visiting artist in our open studio, MonoMuse offers a space where history and innovation shake hands. We believe that art is a living conversation, and we’re mighty glad to have you join in. Pull up a chair, stay a while, and let the stories within these walls inspire your own.</p>
+            <span id ="readMore">Read More</span>
+            <span id ="readLess">Read Less</span>
+            </div>
+            <p> Hours of operation: Mon-Sat, 10:00 AM - 5:00 PM<br>Contact us at 804-123-4567</p>
+        </main>
+        <footer class = "footer">
+            <p id="copyYear">MonoMuse. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

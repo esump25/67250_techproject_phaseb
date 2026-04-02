@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonoMuse - Order Confirmation</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="header-brand">
+                    <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+                    <h1>MonoMuse</h1>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <h1>Order Confirmed!</h1>
+            <p>Thank you for your purchase. Here is your order summary:</p>
+            <table>
+                <tr><th>Visit Date</th><td id="confDate"></td></tr>
+                <tr><th>Visit Time</th><td id="confTime"></td></tr>
+                <tr><th>Ticket Type</th><td id="confType"></td></tr>
+                <tr><th>Quantity</th><td id="confQty"></td></tr>
+                <tr><th>Total Paid</th><td id="confTotal"></td></tr>
+            </table>
+            <p style="margin-top: 20px;">We look forward to seeing you at MonoMuse!</p>
+            <a class="cta" href="../index.html">Back to Home</a>
+        </main>
+        <footer class="footer">
+            <p>MonoMuse. All Rights Reserved.</p>
+        </footer>
+    </div>
+    <script>
+        var params = new URLSearchParams(window.location.search);
+        document.getElementById('confDate').innerText = params.get('date');
+        document.getElementById('confTime').innerText = params.get('time');
+        document.getElementById('confType').innerText = params.get('type').charAt(0).toUpperCase() + params.get('type').slice(1);
+        document.getElementById('confQty').innerText = params.get('qty');
+        document.getElementById('confTotal').innerText = '$' + params.get('total');
+    </script>
+</body>
+</html>
